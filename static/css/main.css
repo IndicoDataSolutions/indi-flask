@@ -1,3 +1,54 @@
-h1 {
+html > body {
+    background: #333;
+}
+
+#form_holder {
     text-align: center;
+    margin-top:40px;
+}
+
+#form_holder > form {
+    width:98%;
+    display: inline-block;
+}
+#form_holder > form > * {
+    margin:10px 10px;
+    border:none;
+    border-radius: 0.2em;
+    line-height: 2em;
+    height:2.2em;
+}
+#form_holder > form > span {
+    color:white;
+    font-size: 1.25em;
+}
+
+#form_holder input[type="text"] {
+    min-width: 200px;
+    width:50%;
+    padding-left:10px;
+}
+#form_holder input[type="submit"] {
+    min-width:150px;
+    margin-top:20px;
+    padding:20px 32px;
+    line-height: 0em;
+    background:#b05ecc;
+    color:white;
+}
+
+#result {
+    width: 95%;
+    display: block;
+    margin:30px auto;
+    text-align: center;
+    color:white;
+}
+#result > h1 {
+    display: inline-block;
+    padding:0px 15px 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: normal;
+    border-bottom: 3px solid white;
 }
