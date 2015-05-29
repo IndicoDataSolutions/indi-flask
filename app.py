@@ -23,7 +23,7 @@ def send_to_indico():
     api = request.form.get('api')
 
     indimodel = getattr(indicoio, api)  # grabs the appropriate method
-    res = indimodel(data, api_key="9e8f0a396fc34b334110145efcb133e4")
+    res = indimodel(data, api_key="YOUR_API_KEY")
     return json.dumps(res)  # dumps converts res to a JSON object
 
 
