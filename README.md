@@ -7,11 +7,11 @@ To use, clone this repository by taking the link on the right and running
 
 `git clone https://github.com/IndicoDataSolutions/indi-flask`
 
-then `cd indi-flask` and you're home. For those of you who use [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) (recommended), go ahead and run
+Then `cd indi-flask` and you're home. For those of you who use [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) (recommended), go ahead and create a the `venv` folder by running `virtualenv venv` and then activating by running:
 
-`source venv/bin/activate` 
+`source venv/bin/activate`
 
-then to get all the necessary python dependencies (only `Flask` and `indicoio` right now), run
+Then to get all the necessary python dependencies (only `Flask` and `indicoio` right now), run
 
 `pip install -r requirements.txt`
 
