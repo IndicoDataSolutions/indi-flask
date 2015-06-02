@@ -11,7 +11,7 @@ Then `cd indi-flask` and you're home. For those of you who use [virtualenv](http
 
 `source venv/bin/activate`
 
-Then to get all the necessary python dependencies (only `Flask` and `indicoio` right now), run
+Then to get all the necessary python dependencies, run
 
 `pip install -r requirements.txt`
 
