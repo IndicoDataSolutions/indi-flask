@@ -20,9 +20,9 @@ def send_to_indico():
     the form on index.html
     '''
     data = request.form.get('text')
-    api = request.form.get('api')
+    model = request.form.get('model')
 
-    indimodel = getattr(indicoio, api)  # grabs the appropriate method
+    indimodel = getattr(indicoio, model)  # grabs the appropriate method
     res = indimodel(data, api_key="YOUR_API_KEY")
     return json.dumps(res)  # dumps converts res to a JSON object
 

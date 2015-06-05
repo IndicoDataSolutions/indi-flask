@@ -2,7 +2,7 @@ Flask==0.10.1
 gevent==1.0.1
 greenlet==0.4.3
 grequests==0.2.0
-IndicoIo==0.4.2
+IndicoIo==0.6.0
 itsdangerous==0.24
 Jinja2==2.7.3
 lxml==3.3.5
