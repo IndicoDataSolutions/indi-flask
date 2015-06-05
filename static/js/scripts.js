@@ -6,7 +6,25 @@ $('form').submit(function() {
     to do with returned data.
     */
     $.post('/crunch', $(this).serialize() , function(res) {
-        $('#result > p').text(res);
+
+        res = JSON.parse(res)
+        var ctx = document.getElementById("result").getContext("2d");
+
+        var data = {
+            labels: res['tweets'],
+            datasets: [
+                {
+                    label: "My First dataset",
+                    fillColor: "rgba(255,255,255,0.9)",
+                    strokeColor: "rgba(220,220,220,1)",
+                    data: res['scores']
+                }
+            ]
+        };
+        var myLineChart = new Chart(ctx).Bar(data, {
+            showScale: false
+        });
+
     });
 
     return false; // so that form doesn't try to complete post
