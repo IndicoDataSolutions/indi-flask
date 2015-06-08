@@ -14,9 +14,8 @@ $('form').submit(function() {
             labels: res['tweets'],
             datasets: [
                 {
-                    label: "My First dataset",
-                    fillColor: "rgba(255,255,255,0.9)",
-                    strokeColor: "rgba(220,220,220,1)",
+                    label: "Tweet Sentiment",
+                    fillColor: "white",
                     data: res['scores']
                 }
             ]

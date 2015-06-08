@@ -22,11 +22,18 @@ def send_to_indico():
 
     tweets_csv_string = request.form.get('tweets')
     csv_list = tweets_csv_string.replace('\r', '').splitlines()
+
     if len(csv_list) > 40:
         csv_list = csv_list[:40]
-    tweet_list = [','.join(csv_tweet.split(',')[2:]) for csv_tweet in csv_list][::-1]
 
-    tweet_scores = indicoio.batch_sentiment(tweet_list, api_key="fb039b9dafb34eeb83aa3307e8efb167")
+    tweet_list = []
+    for csv_tweet in csv_list:
+        tweet_only = csv_tweet.split(',')[2:]
+        tweet_list.append(','.join(tweet_only))
+
+    tweet_list = tweet_list[::-1]
+
+    tweet_scores = indicoio.batch_sentiment(tweet_list, api_key="YOUR_API_KEY")
     return json.dumps({'scores': tweet_scores, 'tweets': tweet_list})  # dumps converts res to a JSON object
 
 

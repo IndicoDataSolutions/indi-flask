@@ -12,46 +12,31 @@ html > body {
     display: inline-block;
 }
 #form_holder > form > * {
-    margin:10px 10px;
+    padding:12px;
     border:none;
     border-radius: 0.2em;
     -webkit-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px -2px rgba(0,0,0,0.75);
-    line-height: 2em;
-    height:2.2em;
 }
 
 #form_holder textarea {
     height:150px;
-    min-width: 200px;
+    min-width: 300px;
     width:50%;
-    padding-left:10px;
     outline:none;
 }
+
 #form_holder input[type="submit"] {
     min-width:150px;
-    margin-top:20px;
-    padding:20px 32px;
-    line-height: 0em;
+    margin-top:30px;
     background:#b05ecc;
     color:white;
 }
-
 
 #result {
     max-width:90%;
     width:1000px;
     display: block;
     margin:30px auto;
-    text-align: center;
-    color:white;
-}
-#result > h1 {
-    display: inline-block;
-    padding:0px 15px 10px;
-    margin-bottom: 20px;
-    font-size: 2em;
-    font-weight: normal;
-    border-bottom: 3px solid white;
 }
